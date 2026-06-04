@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --color-discord-gray: #313338;
+  --color-discord-dark: #2B2D31;
+  --color-discord-black: #1E1F22;
+  --color-discord-blurple: #5865F2;
+  
+  /* Register the custom drift animation keyframes in Tailwind v4 */
+  @keyframes drift {
+    0%, 100% { 
+      opacity: 0.15; 
+      transform: scale(1) translate(0px, 0px); 
+    }
+    50% { 
+      opacity: 0.3; 
+      transform: scale(1.1) translate(30px, -20px); 
+    }
+  }
+}
+
+/* Create dedicated utility classes for the dynamic backdrop orbs */
+.animate-orb-1 {
+  animation: drift 14s infinite ease-in-out;
+}
+
+.animate-orb-2 {
+  animation: drift 18s infinite ease-in-out;
+  animation-delay: 3s;
+}
+
+:root {
+  height: 100%;
+}
+
+body {
+  /* Set base background color, but allow our components to render cleanly over it */
+  background-color: #111214;
+  color: #f2f3f5;
+  margin: 0;
+  min-height: 100vh;
+}
