@@ -14,7 +14,7 @@ const Jobs = () => {
         const fetchLiveJobs = async () => {
             try {
                 // Request live data streaming from your Express API backend gateway
-                const response = await axios.get('http://localhost:5000/api/jobs');
+                const response = await axios.get(`${import.meta.env.VITE_API_URL}/api/jobs`);
                 setJobs(response.data);
                 setLoading(false);
             } catch (error) {
