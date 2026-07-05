@@ -182,7 +182,7 @@ const IntroScreen = () => {
 
             if (zoomProgress >= 1) {
                 cancelAnimationFrame(animRef.current);
-                navigate('/');
+                navigate('/home');
                 return;
             }
 

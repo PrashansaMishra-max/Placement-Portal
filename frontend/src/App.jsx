@@ -22,8 +22,8 @@ import Applicants from './components/admin/Applicants'
 const withBackground = (Component) => <DynamicBackground>{Component}</DynamicBackground>;
 
 const appRouter = createBrowserRouter([
-  { path: '/intro', element: <IntroScreen /> },
-  { path: '/', element: withBackground(<Home />) },
+  { path: '/', element: <IntroScreen /> },
+  { path: '/home', element: withBackground(<Home />) },
   { path: '/login', element: withBackground(<Login />) },
   { path: '/signup', element: withBackground(<Signup />) },
   { path: '/dashboard', element: withBackground(<StudentDashboard />) },
