@@ -22,12 +22,12 @@ const Navbar = () => {
 
     return (
         <nav className="fixed top-0 left-0 right-0 h-16 bg-discord-dark/90 backdrop-blur-md border-b border-white/5 px-6 flex items-center justify-between z-50">
-            <Link to="/" className="text-xl font-black tracking-wider text-white hover:text-discord-blurple transition-colors">
+           <Link to="/home" className="text-xl font-black tracking-wider text-white hover:text-discord-blurple transition-colors">
                 CAREER<span className="text-discord-blurple">GRID</span>
             </Link>
 
             <div className="hidden md:flex items-center gap-6 text-sm font-bold text-gray-300">
-                <Link to="/" className="hover:text-white transition-colors">Home</Link>
+                <Link to="/home" className="hover:text-white transition-colors">Home</Link>
                 <Link to="/jobs" className="hover:text-white transition-colors">Browse Jobs</Link>
                 {currentUser && (
                     currentUser.role === 'recruiter' ? (
