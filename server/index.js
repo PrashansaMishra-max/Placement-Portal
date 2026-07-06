@@ -12,13 +12,11 @@ dotenv.config();
 
 const app = express();
 
-const allowedOrigins = [
-    'http://localhost:5173',
-    process.env.FRONTEND_URL,
-].filter(Boolean);
-
 app.use(cors({
-    origin: allowedOrigins,
+    origin: [
+        'http://localhost:5173',
+        'https://placement-portal-sxeu.vercel.app'
+    ],
     credentials: true
 }));
 
