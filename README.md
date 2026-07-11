@@ -2,7 +2,7 @@
 
 A full-stack Placement Portal that connects students with recruiters through a streamlined recruitment system. Students can create profiles, upload resumes, and apply for job opportunities — all in one place.
 
-🔗 **Live Demo:** [placement-portal-sxeu.vercel.app]((https://placement-portal-sxeu.vercel.app/))
+🔗 **Live Demo:** [placement-portal-sxeu.vercel.app](https://placement-portal-sxeu.vercel.app/)
 
 
 
